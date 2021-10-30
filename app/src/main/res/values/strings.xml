@@ -1,0 +1,33 @@
+<resources>
+    //Página de Login
+    <string name="app_name">GOAL</string>
+    <string name="slogan">A gente sonha e chega lá</string>
+    <string name="criarConta">Criar Conta</string>
+    <string name="Esqueci">Esqueci minha senha</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+
+    //Página de apresentação de metas
+    <string name="Saldo">Saldo Geral</string>
+    <string name="CriarMeta">Criar Meta</string>
+    <string name="NovaMeta">Nova Meta</string>
+
+    // Página Promoção
+    <string name="Parabéns">Parabéns</string>
+    <string name="Incentivo">Você ganhou R$100,00 para iniciar sua experiência com a gente!</string>
+
+    //Página de Edição / Criação e Exclusão de metas
+    <string name="m0a25">Vamos lá, todo começo é mais difícil</string>
+    <string name="m26a50">Olho na meta, você está próximo da metada!</string>
+    <string name="m51a75">Quase lá, você está próximo de sua meta</string>
+    <string name="m76a100">Falta pouco para realizar o seu sonho!</string>
+
+    // Estrutura da página de criação / edição e exclusão.
+    <string name="Categoria">Categoria</string>
+    <string name="NomeDaMeta">Nome da Meta</string>
+    <string name="Prazo">Prazo da Meta</string>
+    <string name="MetaInvestimento">Meta de Investimento</string>
+    <string name="Salvar">Salvar meta</string>
+    <string name="Excluir">Excluir Meta</string>
+</resources>
