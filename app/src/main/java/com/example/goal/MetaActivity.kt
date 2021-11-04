@@ -1,10 +1,11 @@
 package com.example.goal
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.login.*
-class loginActivity : AppCompatActivity() {
+import kotlinx.android.synthetic.main.activity_meta.*
+
+class MetaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_meta)
     }
-     }
+}

@@ -6,21 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="189dp"
-        android:layout_height="42dp"
-        android:text="@string/slogan"
-        android:textColor="@color/gray"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="80dp" />
+    <ListView
+        android:id="@+id/listaMetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ListView>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="227dp"
-        android:layout_height="221dp"
-        app:srcCompat="@drawable/page1"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="154dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.goal">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GOAL">
+
+
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,20 +23,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".metaActivity"
+            android:name=".MainActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"
-            />
-    <activity
-        android:name=".loginActivity"
-        android:exported="true"
-        android:parentActivityName=".MainActivity"
-        />
-    <activity
-    android:name=".promocaoActivity"
-    android:exported="true"
-    android:parentActivityName=".MainActivity"
-        />
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".MetaActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PromocaoActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
