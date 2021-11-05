@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
 
     <TextView
@@ -24,14 +24,14 @@
 
     <TextView
         android:id="@+id/Slogan"
-        android:layout_width="183dp"
-        android:layout_height="57dp"
+        android:layout_width="216dp"
+        android:layout_height="69dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/ubuntu_bold"
         android:text="@string/slogan"
         android:textAlignment="center"
         android:textColor="@color/roxoEscuro"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -40,8 +40,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="240dp"
-        android:layout_height="254dp"
+        android:layout_width="275dp"
+        android:layout_height="297dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,43 +52,43 @@
         android:id="@+id/txtUsuario"
         android:layout_width="214dp"
         android:layout_height="41dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/border"
-        android:textAlignment="center"
         android:ems="10"
         android:hint="@string/usuario"
-        android:l
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/txtSenha"
-        android:layout_width="210dp"
-        android:layout_height="36dp"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:textAlignment="center"
         android:hint="@string/senha"
         android:inputType="textPassword"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
     <Button
         android:id="@+id/btnEntrar"
-        android:layout_width="205dp"
-        android:layout_height="47dp"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/border"
         android:text="@string/entrar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSenha"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.431" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
