@@ -7,7 +7,6 @@ import android.widget.EditText
 import android.widget.ListAdapter
 import android.widget.ListView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.goal.controller.LoginController
 import com.example.goal.controller.MainController
 import com.example.goal.model.MetaItem
 import com.example.goal.model.MetaItemAdapter
