@@ -1,6 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="457dp"
+        android:layout_height="776dp"
+        app:srcCompat="@drawable/fundocinza"
+        tools:layout_editor_absoluteX="-25dp"
+        tools:layout_editor_absoluteY="-45dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="363dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/fundoamarelo"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-14dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/people"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="88dp"
+        android:layout_height="91dp"
+        app:srcCompat="@drawable/imagem2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="317dp"
+        android:layout_height="260dp"
+        app:srcCompat="@drawable/fundobranco"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/sair"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="118dp"
+        android:layout_height="116dp"
+        app:srcCompat="@drawable/foguete"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/Parabéns"
+        android:textColor="@color/roxoEscuro"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="Nome do cliente"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/Incentivo"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:background="@drawable/border"
+        android:text="@string/CriarMeta"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/roxoEscuro"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="116dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/Saldo"
+        android:textAlignment="center"
+        android:textColor="@color/roxoEscuro"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="R$000.00"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="61dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
