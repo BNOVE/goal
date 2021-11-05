@@ -29,7 +29,7 @@
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/carro"
@@ -57,8 +57,12 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/ubuntu"
                     android:text="Maio /2022"
-                    tools:layout_editor_absoluteX="71dp"
-                    tools:layout_editor_absoluteY="32dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.476"
+                    app:layout_constraintStart_toEndOf="@+id/imgItemMeta"
+                    app:layout_constraintTop_toBottomOf="@+id/txtItemMeta"
+                    app:layout_constraintVertical_bias="0.304" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline2"

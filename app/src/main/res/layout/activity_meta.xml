@@ -26,17 +26,14 @@
 
         <TextView
             android:id="@+id/textMetaIncentivo"
-            android:layout_width="268dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="28dp"
+            android:layout_width="205dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="92dp"
             android:fontFamily="@font/ubuntu"
             android:text="Você está dando um grande passo para realizar seus sonhos!"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.909"
-            app:layout_constraintStart_toEndOf="@+id/textMetaPercent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="48dp" />
 
         <TextView
             android:id="@+id/textNnm"
@@ -55,7 +52,7 @@
 
         <EditText
             android:id="@+id/editNomeDaMeta"
-            android:layout_width="337dp"
+            android:layout_width="330dp"
             android:layout_height="40dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="8dp"
@@ -79,7 +76,7 @@
 
         <EditText
             android:id="@+id/editMi"
-            android:layout_width="329dp"
+            android:layout_width="330dp"
             android:layout_height="40dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="8dp"
@@ -127,7 +124,7 @@
 
         <EditText
             android:id="@+id/editMetaCategoria"
-            android:layout_width="338dp"
+            android:layout_width="330dp"
             android:layout_height="40dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="8dp"
@@ -195,28 +192,36 @@
             android:id="@+id/imageView5"
             android:layout_width="79dp"
             android:layout_height="76dp"
-            app:srcCompat="@drawable/imagem2"
-            tools:layout_editor_absoluteX="-1dp"
-            tools:layout_editor_absoluteY="12dp" />
+            android:layout_marginEnd="280dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032"
+            app:srcCompat="@drawable/imagem2" />
 
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="33dp"
             android:layout_height="42dp"
-            app:srcCompat="@drawable/people"
-            tools:layout_editor_absoluteX="364dp"
-            tools:layout_editor_absoluteY="16dp" />
+            android:layout_marginEnd="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166"
+            app:srcCompat="@drawable/people" />
 
         <TextView
             android:id="@+id/textViewSaldoMetaAqui"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/ubuntu"
             android:text="saldo da meta aqui"
             android:textColor="@color/white"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="126dp"
-            tools:layout_editor_absoluteY="98dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
