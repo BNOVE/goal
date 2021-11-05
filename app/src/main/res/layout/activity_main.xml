@@ -3,15 +3,216 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listaMetas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></ListView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="422dp"
+        android:layout_height="605dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="139dp">
 
+
+        <TextView
+            android:id="@+id/textMetaPercent"
+            android:layout_width="79dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="000%"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMetaIncentivo"
+            android:layout_width="268dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Você está dando um grande passo para realizar seus sonhos!"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toEndOf="@+id/textMetaPercent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textNnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/NomeDaMeta"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMetaIncentivo" />
+
+        <EditText
+            android:id="@+id/editNomeDaMeta"
+            android:layout_width="337dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Digite um nome para esta meta"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNnm" />
+
+        <TextView
+            android:id="@+id/textInvestimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/MetaInvestimento"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNomeDaMeta" />
+
+        <EditText
+            android:id="@+id/editMi"
+            android:layout_width="329dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Qual é o valor em R$ que voce pretente atingir?"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInvestimento" />
+
+        <TextView
+            android:id="@+id/textPrazoMeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="@string/Prazo"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMi" />
+
+        <EditText
+            android:id="@+id/editPrazoMeta"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Em quanto tempo você  pretente atingir este objetivo ?"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPrazoMeta" />
+
+        <TextView
+            android:id="@+id/textCatMeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Categoria"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPrazoMeta" />
+
+        <EditText
+            android:id="@+id/editMetaCategoria"
+            android:layout_width="338dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Como você classificaria este objetivo (viagem, estudos, carro, casa ...) ?"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCatMeta" />
+
+
+        <Button
+            android:id="@+id/buttonSalvarMetaEditada"
+            android:layout_width="147dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Salvar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMetaCategoria" />
+
+        <Button
+            android:id="@+id/buttonExcluirMetaEditada"
+            android:layout_width="146dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/borderlaranja"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Excluir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMetaCategoria" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="423dp"
+        android:layout_height="138dp"
+        android:background="@android:color/holo_orange_light"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textViewNomeMetaAqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="nome da meta aqui"
+            android:textColor="@color/roxoEscuro"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="79dp"
+            android:layout_height="76dp"
+            app:srcCompat="@drawable/imagem2"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="12dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="33dp"
+            android:layout_height="42dp"
+            app:srcCompat="@drawable/people"
+            tools:layout_editor_absoluteX="364dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textViewSaldoMetaAqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="saldo da meta aqui"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="98dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

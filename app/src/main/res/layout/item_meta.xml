@@ -22,7 +22,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="66dp">
 
                 <ImageView
                     android:id="@+id/imgItemMeta"
@@ -43,8 +43,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="8dp"
-                    android:fontFamily="@font/century_gothic2"
+                    android:fontFamily="@font/ubuntu_bold"
                     android:text="Carro novo"
+                    android:textColor="@color/roxoEscuro"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/imgItemMeta"
@@ -54,12 +55,17 @@
                     android:id="@+id/txtDataVencimentoMeta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/century_gothic2"
+                    android:fontFamily="@font/ubuntu"
                     android:text="Maio /2022"
-                    app:layout_constraintStart_toEndOf="@+id/imgItemMeta"
-                    app:layout_constraintTop_toBottomOf="@+id/txtItemMeta" />
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="32dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
@@ -70,6 +76,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -78,13 +85,28 @@
                     android:id="@+id/txtLucro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/century_gothic2"
+                    android:fontFamily="@font/ubuntu"
                     android:text="+22,50"
                     android:textAlignment="center"
                     android:textColor="@color/verde"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_editor_absoluteX="0dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrier2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="left"
+                    app:constraint_referenced_ids="txtLucro" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
@@ -103,7 +125,7 @@
                     android:id="@+id/txtValorTotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/century_gothic2"
+                    android:fontFamily="@font/ubuntu_bold"
                     android:text="20.002,50"
                     android:textAlignment="center"
                     android:textColor="@color/black"

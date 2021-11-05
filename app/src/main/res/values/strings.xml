@@ -4,7 +4,7 @@
 
     //Página de Login
     <string name="app_name">GOAL</string>
-    <string name="slogan">A gente sonha e chega lá</string>
+    <string name="slogan">A gente sonha e chega lá!</string>
     <string name="criarConta">Criar Conta</string>
     <string name="Esqueci">Esqueci minha senha</string>
     <string name="usuario">Usuário</string>
@@ -17,7 +17,7 @@
     <string name="NovaMeta">Nova Meta</string>
 
     // Página Promoção
-    <string name="Parabéns">Parabéns</string>
+    <string name="Parabéns">PARABÉNS</string>
     <string name="Incentivo">Você ganhou R$100,00 para iniciar sua experiência com a gente!</string>
 
     //Página de Edição / Criação e Exclusão de metas
@@ -39,6 +39,12 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    //Página em construção
+    <string name="trabalhando">Ainda estamos trabalhando nesta tela e em breve ela estará disponível.</string>
+    <string name="construcao">Em construção!</string>
+    <string name="opa">Opa!</string>
+    <string name="voltar">Voltar</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
