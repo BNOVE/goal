@@ -19,7 +19,9 @@ import com.example.goal.ViewHolder
 
 
 
-class MetaItemAdapter(private val context: Context, private val arrayList: List<MetaItem>) : BaseAdapter() {
+class MetaItemAdapter(private val context: Context, private val arrayList: List<Cofre>) : BaseAdapter() {
+
+    private val transacoes = arrayList
 
     private lateinit var  lnlItemMeta : LinearLayout
     private lateinit var  imgItemMeta   : ImageView
@@ -31,7 +33,7 @@ class MetaItemAdapter(private val context: Context, private val arrayList: List<
         return arrayList.size
     }
     override fun getItem(position: Int): Any {
-        return position
+        return arrayList[position]
     }
     override fun getItemId(position: Int): Long {
         return position.toLong()
@@ -40,17 +42,21 @@ class MetaItemAdapter(private val context: Context, private val arrayList: List<
         var convertView = convertView
         convertView = LayoutInflater.from(context).inflate(R.layout.item_meta, parent, false)
         lnlItemMeta = convertView.findViewById<LinearLayout>(R.id.lnlItemMeta)
-         imgItemMeta = convertView.findViewById<ImageView>(R.id.imgItemMeta)
-         txtItemMeta = convertView.findViewById<TextView>(R.id.txtItemMeta)
-         txtDataVencimentoMeta = convertView.findViewById<TextView>(R.id.txtDataVencimentoMeta)
-         txtLucro = convertView.findViewById<TextView>(R.id.txtLucro)
-         txtValorTotal = convertView.findViewById<TextView>(R.id.txtValorTotal)
+        imgItemMeta = convertView.findViewById<ImageView>(R.id.imgItemMeta)
+        txtItemMeta = convertView.findViewById<TextView>(R.id.txtItemMeta)
+        txtLucro = convertView.findViewById<TextView>(R.id.txtLucro)
+        txtDataVencimentoMeta = convertView.findViewById<TextView>(R.id.txtDataVencimentoMeta)
+        txtValorTotal = convertView.findViewById<TextView>(R.id.txtValorTotal)
 
         txtItemMeta.setText(arrayList[position].nome);
+        txtDataVencimentoMeta.setText(arrayList[position].vencimentoMeta);
+        txtValorTotal.setText(arrayList[position].valorTotal.toString());
 
         convertView.setOnClickListener{
+
+            val id : Int =  arrayList[position].codigo
             val intent = Intent(context,MetaActivity::class.java)
-            intent.putExtra("codigoMeta", arrayList[position].codigo)
+            intent.putExtra("codigoCofre", arrayList[position].codigo)
             context.startActivity(intent)
         }
 

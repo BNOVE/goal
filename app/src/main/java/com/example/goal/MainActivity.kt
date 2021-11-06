@@ -1,35 +1,45 @@
 package com.example.goal
 
+import android.content.Intent
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.EditText
-import android.widget.ListAdapter
-import android.widget.ListView
-import androidx.recyclerview.widget.RecyclerView
-import com.example.goal.controller.MainController
-import com.example.goal.model.MetaItem
+import android.view.View
+import android.widget.*
 import com.example.goal.model.MetaItemAdapter
-import kotlinx.android.synthetic.main.activity_login.*
+import com.example.goal.service.RestApiService
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val controller = MainController()
+        if (usouPromocaoSessao) {
+            var dialog = Progress.progressDialog(this)
+            dialog.show()
+            val apiService = RestApiService()
+            apiService.getPessoaConta(codigoPessoaSessao) {
+                if (it != null) {
+                    val textViewSaldoMetaAqui = findViewById<TextView>(R.id.textViewSaldoMetaAqui);
+                    textViewSaldoMetaAqui.setText(it.saldoLivre.toString())
 
-        val listaMetas = findViewById<ListView>(R.id.listaMetas);
-
-        var metaItemArray = ArrayList<MetaItem>()
-        metaItemArray.add(MetaItem(1,"meta 1"))
-        metaItemArray.add(MetaItem(2,"meta 2"))
-        metaItemArray.add(MetaItem(3,"meta 3"))
-        metaItemArray.add(MetaItem(4,"meta 4"))
-
-        var adapter: MetaItemAdapter? = null
-        adapter = MetaItemAdapter(this, metaItemArray );
-        listaMetas.adapter = adapter;
-        //val txtUsuario = findViewById<ListAdapter>(R.id.txtUsuario);
+                    val listaMetas = findViewById<ListView>(R.id.listaMetas);
+                    var adapter: MetaItemAdapter? = null
+                    adapter = MetaItemAdapter(this, it.cofre);
+                    listaMetas.adapter = adapter
+                }
+                dialog.dismiss();
+            }
+            val btnNovaMeta = findViewById<Button>(R.id.btnNovaMeta);
+            btnNovaMeta.setOnClickListener {
+                val intent = Intent(this, MetaActivity::class.java)
+                intent.putExtra("codigoCofre", 0)
+                startActivity(intent)
+            }
+        }
+        else{
+            val intent = Intent(this, PromocaoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

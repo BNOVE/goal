@@ -6,27 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="423dp"
         android:layout_height="138dp"
         android:background="@android:color/holo_orange_light"
         tools:layout_editor_absoluteX="-6dp"
         tools:layout_editor_absoluteY="0dp">
-
-        <TextView
-            android:id="@+id/textViewNomeMetaAqui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:fontFamily="@font/ubuntu"
-            android:text="@string/Saldo"
-            android:textColor="@color/roxoEscuro"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -51,6 +37,20 @@
             app:srcCompat="@drawable/people" />
 
         <TextView
+            android:id="@+id/textViewNomeMetaAqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Saldo"
+            android:textColor="@color/roxoEscuro"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/textViewSaldoMetaAqui"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,13 +62,38 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="98dp" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
         <ListView
             android:id="@+id/listaMetas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="9dp"
             tools:layout_editor_absoluteY="137dp"></ListView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+    <Button
+        android:id="@+id/btnNovaMeta"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/border"
+        android:text="@string/CriarMeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"></Button>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
