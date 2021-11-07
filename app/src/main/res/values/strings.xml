@@ -2,7 +2,6 @@
 
     <string name="url_api"></string>
 
-
     //Página de Login
     <string name="app_name">GOAL</string>
     <string name="slogan">A gente sonha e chega lá!</string>
@@ -14,9 +13,11 @@
     <string name="falhaLogin">Falha no login</string>
 
     //Página de apresentação de metas
-    <string name="Saldo">Saldo Geral</string>
+    <string name="totalMetas">Saldo Metas</string>
+    <string name="Disponivel">Saldo Disponível</string>
     <string name="CriarMeta">Criar Meta</string>
     <string name="NovaMeta">Nova Meta</string>
+    <string name="SaldoAtual">Atualize seu saldo aqui:</string>
 
     // Página Promoção
     <string name="Parabéns">PARABÉNS</string>
@@ -50,7 +51,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
 
     //Mensagem erro API
     <string name="erroApi">Falha na API</string>

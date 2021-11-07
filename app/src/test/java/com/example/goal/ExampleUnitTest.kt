@@ -1,5 +1,6 @@
 package com.example.goal
 
+import com.example.goal.service.RestApiService
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +13,7 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
+        val apiService = RestApiService()
         assertEquals(4, 2 + 2)
     }
 }

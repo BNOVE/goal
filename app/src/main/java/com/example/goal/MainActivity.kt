@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
 
         if (usouPromocaoSessao) {
             var dialog = Progress.progressDialog(this)
@@ -21,7 +22,10 @@ class MainActivity : AppCompatActivity() {
             apiService.getPessoaConta(codigoPessoaSessao) {
                 if (it != null) {
                     val textViewSaldoMetaAqui = findViewById<TextView>(R.id.textViewSaldoMetaAqui);
-                    textViewSaldoMetaAqui.setText(it.saldoLivre.toString())
+                    textViewSaldoMetaAqui.setText("R$"+(it.saldoTotal - it.saldoLivre).toString() +"0")
+
+                    val textViewSaldoDisponivelAqui = findViewById<TextView>(R.id.textViewSaldoDisponivelAqui);
+                    textViewSaldoDisponivelAqui.setText(it.saldoLivre.toString())
 
                     val listaMetas = findViewById<ListView>(R.id.listaMetas);
                     var adapter: MetaItemAdapter? = null
@@ -34,6 +38,13 @@ class MainActivity : AppCompatActivity() {
             btnNovaMeta.setOnClickListener {
                 val intent = Intent(this, MetaActivity::class.java)
                 intent.putExtra("codigoCofre", 0)
+                startActivity(intent)
+            }
+            val btnFecharMain = findViewById<ImageView>(R.id.btnFecharMain);
+            btnFecharMain.setOnClickListener {
+                codigoPessoaSessao=0
+                usouPromocaoSessao=false
+                val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
         }

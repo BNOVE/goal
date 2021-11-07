@@ -15,10 +15,11 @@
         tools:layout_editor_absoluteY="0dp">
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/btnFecharMain"
             android:layout_width="79dp"
             android:layout_height="76dp"
             android:layout_marginEnd="284dp"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,27 +41,59 @@
             android:id="@+id/textViewNomeMetaAqui"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="76dp"
             android:fontFamily="@font/ubuntu"
-            android:text="@string/Saldo"
+            android:text="@string/totalMetas"
             android:textColor="@color/roxoEscuro"
-            android:textSize="24sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.102"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textViewSaldoMetaAqui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="124dp"
+            android:layout_height="26dp"
             android:fontFamily="@font/ubuntu"
-            android:text="saldo geral aqui"
+            android:text="R$00000,00"
             android:textColor="@color/white"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.103"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="98dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeMetaAqui"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewNomeMetaAqui2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Disponivel"
+            android:textColor="@color/roxoEscuro"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.809"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSaldoDisponivelAqui"
+            android:layout_width="124dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="R$00000,00"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.742"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeMetaAqui2"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -86,13 +119,13 @@
         android:id="@+id/btnNovaMeta"
         android:layout_width="138dp"
         android:layout_height="38dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/border"
         android:text="@string/CriarMeta"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"></Button>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

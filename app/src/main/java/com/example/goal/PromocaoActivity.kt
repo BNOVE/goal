@@ -10,7 +10,7 @@ class PromocaoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_promocao)
-
+        supportActionBar?.hide()
 
         val btnUsarPromocao = findViewById<Button>(R.id.btnUsarPromocao);
         btnUsarPromocao.setOnClickListener {

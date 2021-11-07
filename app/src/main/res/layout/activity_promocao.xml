@@ -20,18 +20,6 @@
         app:srcCompat="@drawable/fundobranco" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="54dp"
-        android:layout_height="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.094"
-        app:srcCompat="@drawable/sair" />
-
-    <ImageView
         android:id="@+id/imageView9"
         android:layout_width="118dp"
         android:layout_height="116dp"
@@ -53,10 +41,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintHorizontal_bias="0.67"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.291" />
 
     <TextView
         android:id="@+id/textView2"
@@ -67,10 +55,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintHorizontal_bias="0.671"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.381" />
 
     <TextView
         android:id="@+id/textView3"
@@ -123,22 +111,9 @@
         tools:layout_editor_absoluteX="-6dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:id="@+id/textViewNomeMetaAqui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:fontFamily="@font/ubuntu"
-            android:text="@string/Saldo"
-            android:textColor="@color/roxoEscuro"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/btnSairPromo"
+            android:clickable="true"
             android:layout_width="79dp"
             android:layout_height="76dp"
             android:layout_marginEnd="284dp"
@@ -158,18 +133,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.166"
             app:srcCompat="@drawable/people" />
-
-        <TextView
-            android:id="@+id/textViewSaldoMetaAqui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/ubuntu"
-            android:text="saldo geral aqui"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="98dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
